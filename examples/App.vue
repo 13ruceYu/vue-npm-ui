@@ -2,7 +2,7 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <Demo></Demo>
-    <BoCard></BoCard>
+    <BoCard imgSrc="logo.png" summary="hello"></BoCard>
   </div>
 </template>
 

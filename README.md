@@ -1,24 +1,23 @@
-# vue-npm-ui
+# px-ui 组件库
 
-## Project setup
-```
-yarn install
-```
+## 快速开始
 
-### Compiles and hot-reloads for development
-```
-yarn serve
+### 1. 安装组件库
+
+```bash
+npm i px-ui
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
+### 2. 引用组件库
 
-### Lints and fixes files
-```
-yarn lint
-```
+```javascript
+// 全部引入
+import "px-ui/dist/css/index.css";
+import PxUI from "px-ui";
+Vue.use(PxUI);
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+// 按需引用
+import "px-ui/dist/css/demo.css";
+import { Demo } from "px-ui";
+Vue.use(Demo);
+```

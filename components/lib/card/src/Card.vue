@@ -1,15 +1,18 @@
 <template>
-  <div class="bo-card" :style="width ? {width: width + 'px'} : {}">
-    <div class="bo-card-img" :style="imgHeight ? {height: imgHeight + 'px'} : {}">
-      <img src="" alt="img" />
+  <div class="bo-card" :style="width ? { width: width + 'px' } : {}">
+    <div
+      class="bo-card-img"
+      :style="imgHeight ? { height: imgHeight + 'px' } : {}"
+    >
+      <img :src="imgSrc" alt="img" />
     </div>
     <div v-if="summary" class="bo-card-summary">
-      {{summary}}
+      {{ summary }}
     </div>
     <div v-else class="bo-card-summary">
       <slot></slot>
     </div>
-    <div class="bo-card-footer">footer</div>
+    <slot name="footer"></slot>
   </div>
 </template>
 
